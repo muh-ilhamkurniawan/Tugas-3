@@ -5,8 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
-public class WelcomeActivity extends AppCompatActivity {
+
+public class  WelcomeActivity extends AppCompatActivity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -15,7 +17,7 @@ public class WelcomeActivity extends AppCompatActivity {
 	}
 
 	public void clickLogin(View view) {
-		Intent intent = new Intent(this, LoginActivity.class);
+		Intent intent = new Intent(WelcomeActivity.this, LoginActivity.class);
 		startActivity(intent);
 		finish();
 	}
